@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ziad-Adel-Backend-Dev</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+<!-- Required CSS -->
+<style>
+  .skill-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-title {
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+  }
+  
+  .progress-bar {
+    background-color: #3498db;
+    height: 8px;
+  }
+  
+  .skill-list li {
+    margin-bottom: 0.5rem;
+  }
+  </style>
+
+  <!-- Favicons -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' class='fa-solid'>&#xf121;</text></svg>">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Ziad adel</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+         
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="mailto:ziadadel00120@gmail.com" target="_blank" class="Gmail"> <i class="bi bi-envelope-fill"></i></a>
+              <a href="https://github.com/ziadadel001" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/ziad-adel-9380a6247/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://medium.com/@ziadadel00120" target="_blank" class="medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Ziad Adel | Laravel Backend Specialist </h2>
+            <p class="lead">Always learning, always optimizing to build backend systems that evolve.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Let's Connect</a>
+              <a href="assets/Ziad-Adel-Gomaa-BackendCV.pdf" target="_blank" class="btn btn-outline" download="Ziad-Adel-Backend-Dev-CV.pdf">
+                <i class="fas fa-download"></i> Download CV (PDF)
+              </a>            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-item">
+                <span class="stat-number">1.5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+      
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Backend Developer specializing in Laravel/PHP, focused on building secure, efficient systems. Committed to performance optimization and seamless API integration to deliver exceptional digital experiences.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/me.jpg" alt="Profile Image" 
+              class="img-fluid rounded-4" 
+              style="max-width: 450px; height: auto;">            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+
+              <h2>Back-end Developer</h2>
+
+              <p class="lead mb-4">Junior Backend Developer with a strong foundation in PHP, Laravel, and MySQL. Passionate about 
+                building scalable and secure systems while continuously learning and improving my skills. Seeking an 
+                opportunity to contribute to impactful projects and grow as a developer.</p>
+
+
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Ziad Adel Gomaa</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Phone</span>
+                      <span class="value">+2010299169</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Age</span>
+                      <span class="value">23 Years</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value">ziadadel00120@gmail.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Degree</span>
+                      <span class="value">Bachelor's degree in Computer Science</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Freelance</span>
+                      <span class="value">Available</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">City</span>
+                      <span class="value">Cairo,Egypt</span>
+                    </div>
+                </div>
+              </div>
+
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section py-5 bg-light">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills & Technologies</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+        </div><!-- End Section Title -->
+  
+  <div class="container">
+  
+    <!-- Programming Languages -->
+    <div class="skill-category mb-5" data-aos="fade-up">
+      <h3 class="category-title mb-4">Programming Languages</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card bg-white p-4 rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="mb-0">PHP</h4>
+              <span class="badge bg-primary">Advanced</span>
+            </div>
+            <p class="text-muted mb-0">Object-oriented programming & complex system development</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card bg-white p-4 rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="mb-0">Forntend fundamentals</h4>
+              <span class="badge bg-secondary">Advanced</span>
+            </div>
+            <p class="text-muted mb-0"> HTML, CSS, Bootstrap
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card bg-white p-4 rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="mb-0">JavaScript</h4>
+              <span class="badge bg-secondary">Intermediate</span>
+            </div>
+            <p class="text-muted mb-0">Core language fundamentals & Ajax jQuery</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+<!-- Frameworks & Database Row -->
+<div class="row g-4">
+    
+  <!-- Frameworks -->
+  <div class="col-md-6" data-aos="fade-up">
+    <div class="skill-category">
+      <h3 class="category-title mb-4">Frameworks</h3>
+      <div class="skill-card bg-white p-4 rounded shadow-sm">
+        <h4 class="mb-3">Laravel</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+        </div>
+        <ul class="skill-list list-unstyled mb-0">
+          <li><i class="fas fa-check text-primary me-2"></i>REST API Development</li>
+          <li><i class="fas fa-check text-primary me-2"></i>Eloquent ORM</li>
+          <li><i class="fas fa-check text-primary me-2"></i>Livewire Integration</li>
+          <li><i class="fas fa-check text-primary me-2"></i>Filament Integration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Management Systems -->
+  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="skill-category">
+      <h3 class="category-title mb-4">Database Management Systems</h3>
+      <div class="skill-card bg-white p-4 rounded shadow-sm">
+        <h4 class="mb-3">Relational Databases</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
+        </div>
+        <ul class="skill-list list-unstyled mb-0">
+          <li><i class="fas fa-database text-success me-2"></i>MySQL</li>
+          <li><i class="fas fa-database text-success me-2"></i>SQLite</li>
+          <li><i class="fas fa-wrench text-success me-2"></i>Query Optimization</li>
+          <li><i class="fas fa-shield-alt text-success me-2"></i>Database Security</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br>
+    <!-- APIs & Integrations -->
+    <div class="skill-category mb-5" data-aos="fade-up">
+      <h3 class="category-title mb-4">APIs & Integrations</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card bg-white p-4 rounded shadow-sm">
+            <h4 class="mb-3">Payment Gateways</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-success">PayPal</span>
+              <span class="badge bg-success">Stripe</span>
+              <span class="badge bg-success">Paymob</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card bg-white p-4 rounded shadow-sm">
+            <h4 class="mb-3">Testing & Debugging</h4>
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <span class="badge bg-warning text-dark p-2">PHPUnit</span>
+              <span class="badge bg-warning text-dark p-2">Postman</span>
+              <span class="badge bg-warning text-dark p-2">Xdebug</span>
+              <span class="badge bg-warning text-dark p-2">Browser DevTools</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card bg-white p-4 rounded shadow-sm">
+            <h4 class="mb-3">OAuth-based social logins</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-success">Google</span>
+              <span class="badge bg-success">Meta</span>
+              <span class="badge bg-success">GitHub</span>
+              <span class="badge bg-success">LinkedIn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Work Experience</h2>
+                <p class="lead">Crafting robust backend solutions with a focus on scalability and security.</p>
+            
+                <div class="timeline">
+                    <!-- Fikra Experience -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-left">
+                            <h4 class="company">Fikra</h4>
+                            <span class="period">Jul-2024 - Apr-2024</span>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-right">
+                            <h3 class="position">Backend Developer</h3>
+                            <p class="description">
+                                Key contributor in developing and maintaining enterprise-level web applications using modern backend technologies.
+                            </p>
+                            <ul>
+                                <li>Developed RESTful APIs and Blade websites</li>
+                                <li>Integrate with Third party APIs</li>
+                                <li>Optimized MySQL queries reducing average response time </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Freelance Experience -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="timeline-left">
+                            <h4 class="company">Freelance</h4>
+                            <span class="period">2021 - 2025</span>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-right">
+                            <h3 class="position">Backend Developer</h3>
+                            <p class="description">
+                                Delivered customized solutions for diverse client needs across multiple industries.
+                            </p>
+                            <ul>
+                                <li>Built 5+ CRUD applications using Laravel framework</li>
+                                <li>Integrated third-party APIs including Google Maps and SMS gateways</li>
+                                <li>Created database schemas for complex inventory management systems</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+            
+                </div>
+            </div>
+
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+                <p class="lead">Combining academic excellence with practical software development skills.</p>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Mansoura University</h4>
+                      <span class="period">2020-2024</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bachelor's Degree in Computer Science</h3>
+                      <p class="description">Degree: Overall Good, Graduation Project Excellent</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>Courses & Certifications</h2>
+                <p class="lead">Enhancing technical expertise through specialized training programs</p>
+            
+                <div class="timeline">
+                    <!-- Backend Development Course -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-left">
+                            <h4 class="company">CCIC, Mansoura University</h4>
+                            <span class="period"></span>
+                        </div>
+                        <div class="timeline-dot bg-success"></div>
+                        <div class="timeline-right">
+                            <h3 class="position">Backend Development Professional Program</h3>
+                            <p class="description">
+                                Comprehensive training in PHP, MySQL, and Laravel framework
+                            </p>
+                           
+                        </div>
+                    </div>
+            
+                    <!-- LinkedIn Learning Courses -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="timeline-left">
+                            <h4 class="company">LinkedIn Learning</h4>
+                            <span class="period"></span>
+                        </div>
+                        <div class="timeline-dot bg-warning"></div>
+                        <div class="timeline-right">
+                            <h3 class="position">Advanced Programming Courses</h3>
+                            <ul class="course-list">
+                                <li><i class="fab fa-php text-primary"></i> PHP: OOP Mastery</li>
+                                <li><i class="fab fa-laravel text-danger"></i> Advanced Laravel Techniques</li>
+                                <li><i class="fas fa-database text-info"></i> T-SQL Query Optimization</li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+            
+                    <!-- MaharaTech Course -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-left">
+                            <h4 class="company">MaharaTech</h4>
+                            <span class="period"></span>
+                        </div>
+                        <div class="timeline-dot bg-danger"></div>
+                        <div class="timeline-right">
+                            <h3 class="position">SQL Server Professional</h3>
+                            <p class="description">
+                                Advanced Transact-SQL programming and database management
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Technical Portfolio</h2>
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </div>
+    <p>Showcasing backend solutions that power modern web applications</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <!-- Filters -->
+      <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+        <ul class="portfolio-filters isotope-filters">
+          <li data-filter="*" class="filter-active">All Projects</li>
+          <li data-filter=".filter-api">APIs</li>
+          <li data-filter=".filter-ecom">PHP Native</li>
+          <li data-filter=".filter-tool">Laravel Blade</li>
+        </ul>
+      </div>
+
+      <!-- Projects Container -->
+      <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+
+           
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ecom ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-file-code-fill me-2"></i>
+PHP DB Manager
+                </h3>
+              </div>
+              <p class="skill-description">This PHP script provides classes for database connectivity and common database operations such as insert, select, update, and delete. It utilizes PDO (PHP Data Objects) for secure database connections and prepared statements to prevent SQL injection attacks.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/DatabaseOperations" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Api Card -->
+    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-api ">
+      <div class="github-style-card">
+        <div class="skill-header">
+          <div class="d-flex justify-content-between align-items-start">
+            <h3 class="skill-title">
+              <i class="bi bi-file-code-fill me-2"></i>
+              Yaqout Store
+            </h3>
+          </div>
+          <p class="skill-description">Developing a Laravel-based eCommerce API with a scalable architecture for seamless integration ,Implementing core features like product management, cart operations, order placement,
+             Integrating advanced features such as promotions, discount coupons</p>
+        </div>
+        <div class="skill-footer mt-3">
+          <a href="https://yaqoutstore.shop/" 
+             class="github-link" 
+             target="_blank">
+            View
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+      <div class="github-style-card">
+        <div class="skill-header">
+          <div class="d-flex justify-content-between align-items-start">
+            <h3 class="skill-title">
+              <i class="bi bi-braces me-2"></i>
+              Dashboard               </h3>
+          </div>
+          <p class="skill-description">filament base dashboard for e-commerce.
+          </p>
+        </div>
+      
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+      <div class="github-style-card">
+        <div class="skill-header">
+          <div class="d-flex justify-content-between align-items-start">
+            <h3 class="skill-title">
+              <i class="bi bi-braces me-2"></i>
+              Cart-Service
+            </h3>
+          </div>
+          <p class="skill-description"> Cart Service provides a powerful and efficient cart management system within a Laravel 12 e-commerce API. It enables users to add, retrieve, update, and remove products from their cart while ensuring smooth handling for both guests and authenticated users.
+          </p>
+        </div>
+        <div class="skill-footer mt-3">
+          <a href="https://github.com/ziadadel001/Cart-Service" 
+             class="github-link" 
+             target="_blank">
+            <i class="bi bi-github"></i>
+            View 
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+      <div class="github-style-card">
+        <div class="skill-header">
+          <div class="d-flex justify-content-between align-items-start">
+            <h3 class="skill-title">
+              <i class="bi bi-braces me-2"></i>
+              simple-chat-model
+                 </h3>
+          </div>
+          <p class="skill-description"> WebSocket-based communication
+
+
+          </p>
+        </div>
+        <div class="skill-footer mt-3">
+          <a href="https://github.com/ziadadel001/simple-chat-model" 
+             class="github-link" 
+             target="_blank">
+            <i class="bi bi-github"></i>
+            View 
+          </a>
+        </div>
+      </div>
+    </div>
+        <!-- Api Card -->
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-api ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-file-code-fill me-2"></i>
+                  Article Hub
+                </h3>
+              </div>
+              <p class="skill-description">The API supports creating, reading, updating, and deleting articles, along with user registration and login functionalities using JWT authentication</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/ArticleHub" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Laravel Card -->
+  
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  Roles_premissions
+                </h3>
+              </div>
+              <p class="skill-description"> Using authorization with the Spatie package to define roles and permissions for articles and users.
+              </p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/Roles_premissions" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  novena
+                </h3>
+              </div>
+              <p class="skill-description">A website for a hospital equipped with an appointment booking feature</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/novena" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  e-commerce
+                </h3>
+              </div>
+              <p class="skill-description">A modern e-commerce web application built with Laravel, offering a complete online shopping experience. Key features include product browsing, cart management</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/E-commerce" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                SocialAuth-Integration              </h3>
+              </div>
+              <p class="skill-description">demonstrates how to integrate social media authentication . It leverages Laravel Socialite to provide seamless OAuth authentication.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/SocialAuth-Integration" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  Academy               </h3>
+              </div>
+              <p class="skill-description">website for booking driving lessons with a dedicated dashboard for tracking trainers and trainees, class ratings.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://yasminacademy.online/" 
+                 class="github-link" 
+                 target="_blank">
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  Task Management                 </h3>
+              </div>
+              <p class="skill-description">Helps users manage tasks efficiently with Laravel and Breeze for authentication.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/Task_Management" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  Medical system              </h3>
+              </div>
+              <p class="skill-description">clinic system manages patient records, diagnoses, and appointments, with added chat and monthly reports to improve efficiency.
+              </p>
+            </div>
+          
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  Vega                 </h3>
+              </div>
+              <p class="skill-description">Discover an educational platform where you can book courses, engage in interactive learning, and reserve mentors for personalized guidance.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/Vega" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  psychological              </h3>
+              </div>
+              <p class="skill-description"> psychological consultant , custom dashboard for managing orders, and a user interface for viewing courses and reading books.
+              </p>
+            </div>
+          
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-braces me-2"></i>
+                  Blog             </h3>
+              </div>
+              <p class="skill-description">simple blog
+              </p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/blog" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View 
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- PHP NATIVE Card -->
+    
+
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ecom ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-file-code-fill me-2"></i>
+                  shopping-cart                </h3>
+              </div>
+              <p class="skill-description">Manages an e-commerce cart for adding, updating, and removing items without a database.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/shopping-cart-" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ecom ">
+          <div class="github-style-card">
+            <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="skill-title">
+                  <i class="bi bi-file-code-fill me-2"></i>
+                  User authentication system               </h3>
+              </div>
+              <p class="skill-description">simple authentication system designed for user authentication based on their username and password only.</p>
+            </div>
+            <div class="skill-footer mt-3">
+              <a href="https://github.com/ziadadel001/user-authentication-system" 
+                 class="github-link" 
+                 target="_blank">
+                <i class="bi bi-github"></i>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+   
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+.github-style-card {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.github-style-card:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.skill-title {
+  color: #24292e;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-description {
+  color: #586069;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.skill-badge {
+  background: #eef7ff;
+  color: #0366d6;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #c8e1ff;
+}
+
+.github-link {
+  color: #0366d6 !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  color: #005cc5 !important;
+  text-decoration: underline;
+}
+
+.bi-file-code-fill { color: #6f42c1; }
+.bi-braces { color: #e34c26; }
+.bi-database { color: #00758f; }
+.bi-shield-lock { color: #28a745; }
+</style>
+<!-- Style Additions -->
+<style>
+.tech-stack .badge {
+  font-size: 0.75rem;
+  margin: 2px;
+}
+
+.portfolio-card {
+  border: 1px solid #eee;
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.details-link {
+  background: rgba(255,255,255,0.9);
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+</style>
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </div>
+    <p>Building digital solutions that drive business growth and technical excellence</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row align-items-center">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h2 class="fw-bold mb-4 servies-title">Backend Development Expertise</h2>
+        <p class="mb-4">Specializing in creating robust server-side solutions that power modern web applications.</p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row g-4">
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <i class="bi bi-code-slash"></i>
+              <h3>API Development</h3>
+              <p>Design and implement RESTful APIs with Laravel for seamless system integration and data exchange.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <i class="bi bi-database"></i>
+              <h3>Database Architecture</h3>
+              <p>Optimize MySQL/SQLite performance with efficient schema design and query optimization strategies.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <i class="bi bi-shield-lock"></i>
+              <h3>Security & Performance</h3>
+              <p>Implement JWT authentication, rate limiting, and caching mechanisms for secure, high-performance systems.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item">
+              <i class="bi bi-layout-text-window"></i>
+              <h3>Blade Templating</h3>
+              <p>Develop dynamic, reusable UI components using Laravel Blade templating engine.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3">Contact</div>
+              <h2 class="display-5 mb-4">Let's Build Something Great Together</h2>
+              <p class="lead mb-4">As a backend specialist, I'm ready to help you create secure, scalable solutions. Whether you need API development, system optimization, or technical consultation - let's discuss your project.</p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>ziadadel00120@gmail.com</span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3"></i>
+                  <span>+201029916927
+                  </span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span>Mansoura / Cairo / Alexandra</span>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+
+                <form action="https://formspree.io/f/xzzdreqj" method="post" class="">
+                  <div class="row gy-4">
+
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+
+                    <div class="col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+
+
+                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:ziadadel00120@gmail.com" target="_blank" class="Gmail"> <i class="bi bi-envelope-fill"></i></a>
+        <a href="https://github.com/ziadadel001" target="_blank" class="github"><i class="bi bi-github"></i></a>
+  <a href="https://www.linkedin.com/in/ziad-adel-9380a6247/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="https://medium.com/@ziadadel00120" target="_blank" class="medium">
+    <i class="bi bi-medium"></i>
+  </a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
