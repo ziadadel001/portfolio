@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziad Adel Gomaa — Backend Engineer | PHP & Laravel | Cairo, Egypt</title>
+  <meta name="description" content="Ziad Adel Gomaa is a backend engineer in Cairo, Egypt with 2+ years of production experience in PHP and Laravel — system design, refactoring, and payment flows. Author of gulf/payments. Open to freelance, full-time roles, and relocation.">
+  <meta name="keywords" content="Ziad Adel, Ziad Adel Gomaa, زياد عادل, زياد عادل جمعة, Backend Engineer, Backend Developer, PHP Developer, Laravel Developer, hire backend developer, freelance Laravel developer, Payment gateways, Multi-tenant, REST API, MySQL, Cairo, Egypt">
+  <meta name="author" content="Ziad Adel Gomaa">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B0D10">
+  <link rel="canonical" href="https://ziadadel001.github.io/portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ziad Adel Gomaa — Portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Ziad Adel Gomaa — Backend Engineer (PHP / Laravel)">
+  <meta property="og:description" content="Backend engineer focused on system design, refactoring, and payment flows. I turn complex requirements into clean, reliable systems.">
+  <meta property="og:url" content="https://ziadadel001.github.io/portfolio/">
+  <meta property="og:image" content="https://ziadadel001.github.io/portfolio/assets/img/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230B0D10'/%3E%3Ctext x='18' y='68' font-family='monospace' font-size='52' font-weight='700' fill='%237CFFB2'%3E%3E_%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://ziadadel001.github.io/portfolio/#person",
+        "name": "Ziad Adel Gomaa",
+        "alternateName": ["Ziad Adel", "زياد عادل", "زياد عادل جمعة"],
+        "jobTitle": "Backend Engineer",
+        "description": "Backend engineer with 2+ years of production experience in PHP and Laravel, focused on system design, refactoring, and payment flows. Open to freelance projects, full-time roles, and relocation.",
+        "url": "https://ziadadel001.github.io/portfolio/",
+        "image": "https://ziadadel001.github.io/portfolio/assets/img/ziad-portrait.jpg",
+        "email": "mailto:ziadadel00120@gmail.com",
+        "telephone": "+20-102-991-6927",
+        "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Mansoura University" },
+        "worksFor": { "@type": "Organization", "name": "OAF Programmer" },
+        "knowsAbout": ["PHP", "Laravel", "MySQL", "REST API design", "System design", "Payment gateway integration", "Multi-tenant architecture", "Role-based access control", "Filament", "Livewire", "Redis", "AWS", "Legacy code refactoring", "Technical SEO"],
+        "knowsLanguage": ["Arabic", "English"],
+        "sameAs": [
+          "https://github.com/ziadadel001",
+          "https://www.linkedin.com/in/ziad-adel-9380a6247/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ziadadel001.github.io/portfolio/#website",
+        "url": "https://ziadadel001.github.io/portfolio/",
+        "name": "Ziad Adel Gomaa — Backend Engineer Portfolio",
+        "inLanguage": "en",
+        "about": { "@id": "https://ziadadel001.github.io/portfolio/#person" },
+        "publisher": { "@id": "https://ziadadel001.github.io/portfolio/#person" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ Top bar ============ -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a href="#top" class="brand" aria-label="Ziad Adel — home">
+        <span class="brand__prompt">ziad@backend</span><span class="brand__path">:~$</span><span class="caret" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav__link" href="#about">about</a></li>
+          <li><a class="nav__link" href="#experience">experience</a></li>
+          <li><a class="nav__link" href="#work">work</a></li>
+          <li><a class="nav__link" href="#stack">stack</a></li>
+          <li><a class="nav__link" href="#contact">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="topbar__aside">
+        <span class="clock" aria-label="Local time in Cairo"><span class="dot dot--live" aria-hidden="true"></span>CAI <time id="clock">--:--</time></span>
+        <a class="btn btn--line btn--sm" href="assets/Ziad-Adel-Gomaa.pdf" download>cv.pdf <i class="bi bi-download" aria-hidden="true"></i></a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#about"><span>01</span>about</a></li>
+        <li><a href="#experience"><span>02</span>experience</a></li>
+        <li><a href="#work"><span>03</span>work</a></li>
+        <li><a href="#stack"><span>04</span>stack</a></li>
+        <li><a href="#contact"><span>05</span>contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--accent" href="assets/Ziad-Adel-Gomaa.pdf" download>Download CV <i class="bi bi-download" aria-hidden="true"></i></a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+
+        <div class="hero__copy">
+          <p class="hero__status"><span class="dot dot--live" aria-hidden="true"></span> Open to freelance, full-time &amp; relocation</p>
+
+          <p class="cmd" aria-hidden="true"><span class="cmd__sign">$</span> <span class="typed" data-text="whoami"></span></p>
+          <h1 class="hero__title" id="hero-title">
+            Ziad Adel Gomaa
+            <span class="hero__role">Backend Engineer<span class="hero__slash"> / </span>PHP &amp; Laravel</span>
+          </h1>
+
+          <p class="hero__lead">
+            I turn complex requirements into <em>clean, reliable systems</em> — and make existing ones better.
+            2+ years in production, focused on system design, refactoring, and payment flows.
+          </p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--accent" href="#work">View the work <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn--line" href="assets/Ziad-Adel-Gomaa.pdf" download>Download CV <i class="bi bi-download" aria-hidden="true"></i></a>
+            <span class="hero__socials">
+              <a class="icon-btn" href="https://github.com/ziadadel001" target="_blank" rel="noopener" aria-label="Ziad Adel on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/ziad-adel-9380a6247/" target="_blank" rel="noopener" aria-label="Ziad Adel on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              <a class="icon-btn" href="https://wa.me/201029916927" target="_blank" rel="noopener" aria-label="Message Ziad on WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            </span>
+          </div>
+        </div>
+
+        <aside class="hero__panel" aria-label="Profile card">
+          <div class="window">
+            <div class="window__bar">
+              <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="window__title">profile.jpg</span>
+              <span class="window__meta">200 OK</span>
+            </div>
+            <figure class="portrait">
+              <img src="assets/img/ziad-portrait.jpg" width="900" height="1025" alt="Ziad Adel Gomaa, backend engineer, portrait photo." loading="eager">
+              <span class="portrait__scan" aria-hidden="true"></span>
+            </figure>
+            <div class="pipeline" aria-label="A request moving through a backend: client, API, queue, payments, database">
+              <span class="node">client</span><span class="wire" aria-hidden="true"></span>
+              <span class="node">api</span><span class="wire" aria-hidden="true"></span>
+              <span class="node">queue</span><span class="wire" aria-hidden="true"></span>
+              <span class="node node--hot">pay</span><span class="wire" aria-hidden="true"></span>
+              <span class="node">db</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container">
+        <div class="stats reveal" aria-label="Quick stats">
+          <span class="stats__cmd" aria-hidden="true"><span class="cmd__sign">$</span> ziad --stats</span>
+          <ul class="stats__list">
+            <li><span class="stats__ok" aria-hidden="true">✓</span><b>2+ yrs</b> production</li>
+            <li><span class="stats__ok" aria-hidden="true">✓</span><b>10</b> payment gateways</li>
+            <li><span class="stats__ok" aria-hidden="true">✓</span><b>6</b> client systems fixed</li>
+            <li><span class="stats__ok" aria-hidden="true">✓</span><b>4</b> dashboards, 1 API</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="sec-head__idx">01 <span>// profile</span></p>
+          <h2 id="about-title">The parts people never see, but always feel.</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              I'm a backend engineer based in Cairo, working in PHP and the Laravel ecosystem.
+              I care about the things that are easy to get wrong — money, state, permissions,
+              and data that has to stay correct under load.
+            </p>
+            <p>
+              I've built complete backends solo for multiple client platforms — including a live
+              multi-role system that serves four role dashboards from a single API — across education,
+              e-commerce, and services. I've also spent a lot of time on the other side: walking into
+              legacy codebases, finding why they're slow or fragile, and refactoring them into modular,
+              maintainable architectures.
+            </p>
+            <p>
+              Outside client work I build <a class="ulink" href="https://github.com/ziadadel001/laravel_Gulf_payments" target="_blank" rel="noopener">gulf/payments</a>,
+              an open-source Laravel package that puts ten payment gateways behind one API. Right now
+              I'm going deeper into Domain-Driven Design.
+            </p>
+
+            <h3 class="mini-title">What I'm into</h3>
+            <ul class="interests">
+              <li><i class="bi bi-diagram-3" aria-hidden="true"></i><div><strong>Software architecture</strong><span>DDD, modular and hexagonal architecture, and how they keep large systems maintainable.</span></div></li>
+              <li><i class="bi bi-credit-card-2-front" aria-hidden="true"></i><div><strong>Fintech &amp; payments</strong><span>Payment flows that stay correct, from gateway integration to webhook handling.</span></div></li>
+              <li><i class="bi bi-shield-check" aria-hidden="true"></i><div><strong>Software quality</strong><span>Testing, code review, and performance work that catches problems before production.</span></div></li>
+            </ul>
+          </div>
+
+          <div class="about__side reveal">
+            <figure class="about__photo">
+              <img src="assets/img/me.jpg" width="704" height="884" alt="Ziad Adel Gomaa in a navy blazer, smiling." loading="lazy">
+            </figure>
+            <div class="code-card" aria-label="Profile summary">
+              <div class="code-card__bar"><span>ziad.json</span><span class="code-card__lang">json</span></div>
+<pre><code>{
+  <span class="k">"name"</span>: <span class="s">"Ziad Adel Gomaa"</span>,
+  <span class="k">"role"</span>: <span class="s">"Backend Engineer"</span>,
+  <span class="k">"based"</span>: <span class="s">"Cairo, EG · GMT+2"</span>,
+  <span class="k">"relocation"</span>: <span class="b">true</span>,
+  <span class="k">"experience"</span>: <span class="s">"2+ yrs production"</span>,
+  <span class="k">"focus"</span>: [<span class="s">"system design"</span>,
+            <span class="s">"refactoring"</span>,
+            <span class="s">"payment flows"</span>],
+  <span class="k">"degree"</span>: <span class="s">"B.Sc. Computer Science"</span>,
+  <span class="k">"languages"</span>: {
+    <span class="k">"arabic"</span>: <span class="s">"native"</span>,
+    <span class="k">"english"</span>: <span class="s">"intermediate"</span>
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="sec-head__idx">02 <span>// experience</span></p>
+          <h2 id="experience-title">Where I've shipped.</h2>
+          <p class="sec-head__sub"><code>git log --author="ziad" --oneline</code></p>
+        </header>
+
+        <ol class="log">
+          <li class="log__item reveal">
+            <div class="log__rail" aria-hidden="true"><span class="log__node log__node--head"></span></div>
+            <div class="log__card">
+              <div class="log__top">
+                <span class="hash">a7f3c21</span>
+                <span class="tag tag--accent">HEAD → current</span>
+                <span class="log__when">May 2025 — Present · Banha, Egypt</span>
+              </div>
+              <h3>Backend Engineer <span class="at">@ OAF Programmer</span></h3>
+              <ul>
+                <li>Built complete backends <strong>solo</strong> for multiple client platforms, including a live multi-role system serving <strong>four role dashboards from a single API</strong>.</li>
+                <li>Delivered backends for products across education, e-commerce, and services — from data modeling and business logic to API design.</li>
+                <li>Refactored legacy codebases into modular, maintainable architectures, reducing bugs and improving performance.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="log__item reveal">
+            <div class="log__rail" aria-hidden="true"><span class="log__node"></span></div>
+            <div class="log__card">
+              <div class="log__top">
+                <span class="hash">5e09b8d</span>
+                <span class="tag">freelance · part-time</span>
+                <span class="log__when">Dec 2025 — Jun 2026 · Mansoura, Egypt</span>
+              </div>
+              <h3>Backend Engineer <span class="at">@ Code7x</span></h3>
+              <ul>
+                <li>Resolved production issues across <strong>6 custom-built</strong> client websites and systems.</li>
+                <li>Diagnosed severe slowness on a research publishing platform hosting a large library of books and papers — traced it to inefficient SQL queries and optimized them, <strong>significantly improving page load times</strong>.</li>
+                <li>Worked with the SEO team to implement technical SEO requirements and fixed frontend issues affecting performance and search visibility.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="log__item reveal">
+            <div class="log__rail" aria-hidden="true"><span class="log__node"></span></div>
+            <div class="log__card">
+              <div class="log__top">
+                <span class="hash">1c4d7e0</span>
+                <span class="tag">first role</span>
+                <span class="log__when">Jul 2024 — Apr 2025 · Mansoura, Egypt</span>
+              </div>
+              <h3>Back-end Developer <span class="at">@ Fikra</span></h3>
+              <ul>
+                <li>Handled backend development with Laravel in a small product team, integrating <strong>MyFatoorah payments</strong> and SMS / email notifications.</li>
+                <li>Joined client meetings to understand requirements and help turn them into technical tasks.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Featured work ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="sec-head__idx">03 <span>// selected systems</span></p>
+          <h2 id="work-title">Systems I've built.</h2>
+          <p class="sec-head__sub">One open-source package and three client platforms. Client names, links, and source code stay confidential — the engineering doesn't have to.</p>
+        </header>
+
+        <!-- Flagship: gulf/payments -->
+        <article class="flagship reveal" aria-labelledby="gp-title">
+          <div class="flagship__copy">
+            <div class="chips">
+              <span class="tag tag--accent">open source</span>
+              <span class="tag">MIT</span>
+              <span class="tag tag--amber">active development</span>
+            </div>
+            <h3 class="flagship__title" id="gp-title">gulf/payments</h3>
+            <p class="flagship__hook">Payment orchestration for Laravel — one API over ten gateways.</p>
+            <p>
+              I started it after watching the same payment flows get rebuilt from scratch on project after project.
+              Adding a new gateway takes one driver class and one config block.
+            </p>
+            <ul class="checks">
+              <li><strong>Composable flows</strong> — pay now, authorize &amp; capture, deposit with deferred balance, hosted checkout, recurring billing.</li>
+              <li><strong>Built for correctness</strong> — idempotency keys, signature-verified and out-of-order-safe webhooks, and a payment state machine that dispatches events only after the DB commit.</li>
+              <li><strong>Testable</strong> — a testing fake, a gateway conformance test suite, and PHPStan static analysis.</li>
+            </ul>
+            <div class="flagship__ctas">
+              <a class="btn btn--accent" href="https://github.com/ziadadel001/laravel_Gulf_payments" target="_blank" rel="noopener" aria-label="Open gulf/payments repository on GitHub"><i class="bi bi-github" aria-hidden="true"></i> View on GitHub</a>
+              <a class="btn btn--line" href="https://github.com/ziadadel001/laravel_Gulf_payments#readme" target="_blank" rel="noopener">Read the docs <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="flagship__demo">
+            <div class="code-card">
+              <div class="code-card__bar"><span>CheckoutController.php</span><span class="code-card__lang">php</span></div>
+<pre><code><span class="v">$order</span>-&gt;<span class="f">pay</span>()
+    -&gt;<span class="f">via</span>(<span class="s">'tabby'</span>)
+    -&gt;<span class="f">flow</span>(<span class="s">'authorize_capture'</span>)
+    -&gt;<span class="f">idempotent</span>(<span class="v">$request</span>-&gt;<span class="f">key</span>())
+    -&gt;<span class="f">charge</span>();</code></pre>
+              <div class="term">
+                <p><span class="cmd__sign">$</span> composer require gulf/payments</p>
+                <p class="ok">✓ 10 gateway drivers registered</p>
+                <p class="ok">✓ webhooks: signature-verified, ordered</p>
+                <p class="ok">✓ conformance suite passing</p>
+              </div>
+            </div>
+            <ul class="gateways" aria-label="Supported gateways">
+              <li>Stripe</li><li>Paymob</li><li>MyFatoorah</li><li>Tabby</li><li>Tamara</li>
+              <li>Tap</li><li>PayTabs</li><li>Amazon PS</li><li>Fawry</li><li>PayPal</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Client systems (confidential) -->
+        <div class="cases">
+          <article class="case reveal" aria-labelledby="case1-title">
+            <div class="case__head">
+              <span class="case__id">case_01</span>
+              <span class="tag tag--accent"><span class="dot dot--live" aria-hidden="true"></span>production</span>
+            </div>
+            <h3 id="case1-title">Multi-role empowerment platform</h3>
+            <p class="case__hook">Guides people with disabilities from counseling and training to an independent income track.</p>
+            <ul>
+              <li>Four role dashboards — beneficiary, counselor, trainer, admin / funding committee — <strong>served from a single API</strong>.</li>
+              <li>Modeled the beneficiary journey: sessions, staged training, multi-criteria assessments, and funding decisions.</li>
+              <li>Clean content APIs behind an accessibility-first (WCAG 2.2 AAA) frontend.</li>
+            </ul>
+            <div class="flow" aria-label="Journey: intake, counseling, training, track, funded">
+              <span>intake</span><span>counseling</span><span>training</span><span>track</span><span class="hot">funded</span>
+            </div>
+            <p class="case__stack">Laravel · MySQL · REST · RBAC · Scheduling</p>
+          </article>
+
+          <article class="case reveal" aria-labelledby="case2-title">
+            <div class="case__head">
+              <span class="case__id">case_02</span>
+              <span class="tag tag--amber">in development</span>
+            </div>
+            <h3 id="case2-title">Pet-services super app</h3>
+            <p class="case__hook">One mobile app for a pet's whole life — care, supplies, and services.</p>
+            <ul>
+              <li>Multi-role APIs for owners, vets, merchants, and admins, consumed by iOS / Android.</li>
+              <li>Pet profiles, vet booking, and service scheduling through versioned REST APIs.</li>
+              <li>Supplies marketplace — catalog, cart, orders, delivery tracking, payments, and push notifications.</li>
+            </ul>
+            <div class="flow" aria-label="Modules: pets, vets, shop, orders, payments">
+              <span>pets</span><span>vets</span><span>shop</span><span>orders</span><span class="hot">payments</span>
+            </div>
+            <p class="case__stack">Laravel · MySQL · REST · Payments · Push</p>
+          </article>
+
+          <article class="case reveal" aria-labelledby="case3-title">
+            <div class="case__head">
+              <span class="case__id">case_03</span>
+              <span class="tag tag--amber">in development</span>
+            </div>
+            <h3 id="case3-title">Multi-tenant store builder</h3>
+            <p class="case__hook">A SaaS platform where merchants launch and run their own online stores.</p>
+            <ul>
+              <li>Store-per-merchant tenancy with isolated catalogs, inventory, and orders.</li>
+              <li>Merchant dashboard for products, orders, and sales visibility, built with Filament.</li>
+              <li>Storefront theming and payment-gateway integration per tenant.</li>
+            </ul>
+            <div class="flow" aria-label="Surfaces: tenant, catalog, orders, storefront">
+              <span>tenant</span><span>catalog</span><span>orders</span><span class="hot">storefront</span>
+            </div>
+            <p class="case__stack">Laravel · Filament · MySQL · Multi-tenant</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ More projects ============ -->
+    <section class="section section--alt" id="more" aria-labelledby="more-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="sec-head__idx">04 <span>// more builds</span></p>
+          <h2 id="more-title">Also shipped.</h2>
+          <p class="sec-head__sub"><code>ls -l ~/projects</code> — client work is listed by domain only.</p>
+        </header>
+
+        <div class="ls reveal" role="table" aria-label="More projects">
+          <div class="ls__row ls__row--head" role="row">
+            <span role="columnheader">project</span>
+            <span role="columnheader">what it does</span>
+            <span role="columnheader">type</span>
+          </div>
+
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">e-commerce / water-purification</span>
+            <span role="cell">Store for filters, coolers, and filtration systems, with maintenance scheduling and order management.</span>
+            <span class="ls__type" role="cell">client · KSA</span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">retail / office-furniture</span>
+            <span role="cell">Catalog for desks, chairs, and storage, with custom quote requests and back-office management.</span>
+            <span class="ls__type" role="cell">client · KSA</span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">cms / research-publishing</span>
+            <span role="cell">Articles, specialized research, Q&amp;A, a terminology glossary, and an online store for an educational foundation.</span>
+            <span class="ls__type" role="cell">client · KSA</span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">mobile-api / parking-valet</span>
+            <span role="cell">Backend for self-parking, valet requests, and car-wash orders across hotels, malls, events, and hospitals.</span>
+            <span class="ls__type" role="cell">client · KSA</span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">lms / learning-platform</span>
+            <span role="cell">Courses, lessons, quizzes, progress tracking, live sessions, and instructor APIs.</span>
+            <span class="ls__type" role="cell">client · <em>in dev</em></span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">mobility / ride-sharing</span>
+            <span role="cell">Riders, drivers, trips, and bookings, with Google Places &amp; Distance Matrix for routing and pricing, plus Stripe payouts.</span>
+            <span class="ls__type" role="cell">system</span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">crm / internal-crm</span>
+            <span role="cell">Clients, leads, tasks, and activities with team dashboards and role-scoped views.</span>
+            <span class="ls__type" role="cell">system</span>
+          </div>
+          <div class="ls__row" role="row">
+            <span class="ls__name" role="cell">edu / graduation-project</span>
+            <span role="cell">Gamified Laravel learning platform with mentor booking — graded <strong>Excellent</strong>.</span>
+            <span class="ls__type" role="cell">B.Sc. project</span>
+          </div>
+        </div>
+
+        <div class="repos reveal">
+          <span class="repos__label">public learning repos</span>
+          <a class="ulink" href="https://github.com/ziadadel001/php-oop-solid-guide" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> php-oop-solid-guide</a>
+          <a class="ulink" href="https://github.com/ziadadel001/learning-databases" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> learning-databases</a>
+          <a class="ulink" href="https://github.com/ziadadel001/Learn_Java" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> Learn_Java</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Stack ============ -->
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="sec-head__idx">05 <span>// stack</span></p>
+          <h2 id="stack-title">The toolbox.</h2>
+          <p class="sec-head__sub">Grouped by the problem it solves, not by logo.</p>
+        </header>
+
+        <div class="stack">
+          <div class="stack__group stack__group--wide reveal">
+            <h3><i class="bi bi-hdd-stack" aria-hidden="true"></i> Backend</h3>
+            <ul class="pills"><li class="pill--hi">PHP</li><li class="pill--hi">Laravel</li><li>REST API design</li><li>Multi-tenant architecture</li><li>Role-based access control</li><li>Multi-language (AR / EN)</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-diagram-3" aria-hidden="true"></i> Architecture</h3>
+            <ul class="pills"><li>Service &amp; Repository</li><li>Modular architecture</li><li>Actions &amp; DTOs</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-layers" aria-hidden="true"></i> Laravel ecosystem</h3>
+            <ul class="pills"><li>Filament</li><li>Livewire</li><li>Queues &amp; Jobs</li><li>Task Scheduling</li><li>Reverb</li><li>Pusher</li><li>Telescope</li><li>Horizon</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-shield-lock" aria-hidden="true"></i> Security &amp; auth</h3>
+            <ul class="pills"><li>Sanctum</li><li>Passport</li><li>JWT</li><li>OAuth social login</li><li>OTP / MFA</li><li>Rate limiting</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-credit-card" aria-hidden="true"></i> Payments</h3>
+            <ul class="pills"><li class="pill--hi">10 gateways</li><li>Stripe</li><li>Paymob</li><li>MyFatoorah</li><li>Tabby</li><li>Tamara</li><li>Webhooks</li><li>Idempotency</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-speedometer2" aria-hidden="true"></i> Performance &amp; quality</h3>
+            <ul class="pills"><li>Legacy refactoring</li><li>MySQL query optimization</li><li>Transactions &amp; locking</li><li>Redis caching</li><li>Xdebug</li><li>Debugbar</li><li>Technical SEO</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-plug" aria-hidden="true"></i> Integrations</h3>
+            <ul class="pills"><li>Google Maps &amp; Places</li><li>SMS providers</li><li>WhatsApp providers</li><li>Excel / PDF import &amp; export</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-cloud" aria-hidden="true"></i> Cloud &amp; DevOps</h3>
+            <ul class="pills"><li>AWS S3</li><li>AWS SQS</li><li>AWS Lambda</li><li>GitHub Actions</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-people" aria-hidden="true"></i> Ways of working</h3>
+            <ul class="pills"><li>Technical documentation</li><li>Agile</li><li>Jira</li><li>Sprints</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3><i class="bi bi-stars" aria-hidden="true"></i> AI-assisted dev</h3>
+            <ul class="pills"><li>Claude</li><li>ChatGPT</li><li>Google Antigravity</li><li>Kimi</li></ul>
+            <p class="stack__note">Used for frontend delivery and test writing.</p>
+          </div>
+          <div class="stack__group stack__group--wide stack__group--muted reveal">
+            <h3><i class="bi bi-compass" aria-hidden="true"></i> Familiar with</h3>
+            <ul class="pills"><li>Java (fundamentals)</li><li>MongoDB</li><li>Firebase</li><li>Neo4j</li><li class="pill--learn">Domain-Driven Design · learning</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Credentials ============ -->
+    <section class="section section--alt" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="sec-head__idx">06 <span>// credentials</span></p>
+          <h2 id="credentials-title">Education &amp; courses.</h2>
+        </header>
+
+        <div class="creds">
+          <article class="degree reveal">
+            <p class="degree__years">2020 — 2024</p>
+            <h3>B.Sc. in Computer Science</h3>
+            <p class="degree__school">Faculty of Computers and Information, Mansoura University</p>
+            <p class="degree__note"><i class="bi bi-award" aria-hidden="true"></i> Graduation project graded <strong>Excellent</strong> — a Laravel learning platform with gamification and mentor booking.</p>
+          </article>
+
+          <ul class="courses reveal">
+            <li>
+              <span class="courses__when">Jul — Oct 2024</span>
+              <div><strong>Backend Development Program</strong><span>CCIC, Mansoura University · PHP, MySQL, and Laravel with hands-on dynamic web apps.</span></div>
+            </li>
+            <li>
+              <span class="courses__when">LinkedIn Learning</span>
+              <div><strong>PHP · Object-Oriented Programming · Advanced Laravel</strong><span>Three courses on the language, OOP, and the framework.</span></div>
+            </li>
+            <li>
+              <span class="courses__when">MaharaTech</span>
+              <div><strong>Transact-SQL queries using SQL Server</strong><span>Querying and data manipulation with T-SQL.</span></div>
+            </li>
+            <li>
+              <span class="courses__when">Languages</span>
+              <div><strong>Arabic — native · English — intermediate</strong><span>Comfortable with client meetings and technical documentation in both.</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__pitch reveal">
+          <p class="sec-head__idx">07 <span>// contact</span></p>
+          <h2 id="contact-title">Got a backend that needs building, fixing, or scaling?</h2>
+          <p>Tell me what you're working on and I'll tell you straight whether I'm the right fit. Open to freelance projects, full-time roles, and relocation — I usually reply within a day.</p>
+
+          <ul class="contact__list">
+            <li><span>email</span><a class="ulink" href="mailto:ziadadel00120@gmail.com">ziadadel00120@gmail.com</a></li>
+            <li><span>whatsapp</span><a class="ulink" href="https://wa.me/201029916927" target="_blank" rel="noopener">+20 102 991 6927</a></li>
+            <li><span>github</span><a class="ulink" href="https://github.com/ziadadel001" target="_blank" rel="noopener">github.com/ziadadel001</a></li>
+            <li><span>linkedin</span><a class="ulink" href="https://www.linkedin.com/in/ziad-adel-9380a6247/" target="_blank" rel="noopener">in/ziad-adel-9380a6247</a></li>
+            <li><span>based</span><span class="contact__plain">Cairo, Egypt · open to relocation</span></li>
+          </ul>
+        </div>
+
+        <div class="window contact__form reveal">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__title">POST /contact</span>
+            <span class="window__meta">application/json</span>
+          </div>
+          <form action="https://formspree.io/f/xzzdreqj" method="post" aria-label="Contact form" id="contact-form">
+            <div class="field">
+              <label for="cf-name">name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@company.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-subject">subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="field">
+              <label for="cf-message">message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="A few lines about the project, role, or problem…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--accent btn--block">Send request <i class="bi bi-send" aria-hidden="true"></i></button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand"><span class="brand__prompt">ziad@backend</span>:~$ <span class="footer__exit">exit 0</span></p>
+      <p class="footer__copy">© 2026 Ziad Adel Gomaa · Backend Engineer · Hand-written HTML, CSS &amp; JS.</p>
+      <div class="footer__links">
+        <a class="icon-btn" href="https://github.com/ziadadel001" target="_blank" rel="noopener" aria-label="Ziad Adel on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/ziad-adel-9380a6247/" target="_blank" rel="noopener" aria-label="Ziad Adel on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+        <a class="icon-btn" href="https://wa.me/201029916927" target="_blank" rel="noopener" aria-label="Message Ziad on WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
